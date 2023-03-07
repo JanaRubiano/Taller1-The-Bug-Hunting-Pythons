@@ -11,7 +11,10 @@ Comenzaremos con el primer punto
 
 Para este punto todos los miembros del equipo realizamos el Quiz, discutiendo las posibles respuesta y el porqué de estas. 
 
-(LA IMAGEN VA ACA) 
+
+(Jana Rubiano)
+
+<img width="708" alt="Screenshot 2023-03-06 184525" src="https://user-images.githubusercontent.com/124604730/223298953-3f1bc4f2-2b37-4843-b152-106a109127ff.png">
 
 ---
 
