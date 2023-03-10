@@ -41,7 +41,7 @@ b: float = (input("Ingrese número: "))
 c: float = (input("Ingrese número: "))
 ```
 
-Perfecto, lo siguiente es establecer las comparciones. 
+Lo siguiente es establecer las comparciones. 
 
 Ya solo queda indicar que número es mayor que otro con los simbolos mencionados anteriormente (>, <). 
 
@@ -54,7 +54,7 @@ if a > b and a > c # And es un condicional que hace verdadera una afirmación si
 if a > b and a > c
   print(str(a) + " Es el número mayor") # "str()" es un código que hace que en el "print()" se muestre que representa la varible. 
 ```
-Y hacemos lo mismo sucesivamente para los demás casos. Adjuntaremos el archivo del desarrollo. 
+Y hacemos lo mismo sucesivamente para los demás casos. (Revisar archivo adjunto: 
 
 --- 
 
@@ -67,5 +67,14 @@ Para el desarrollo de este punto básicamente necesitaremos que el usuario pueda
 Sabemos que los pares son aquellos números que son divisibles por 2, es decir, al dividirlos por 2, no dejan residuo, por lo que el operador aritmético modulo “%”, nos permitirá el desarrollo del código.  ¿Cómo haremos esto? Muy sencillo, estableceremos la siguiente operación. 
 
 ```pseudocodigo
-a % 2 == 0   #Si se cumple esta condición, entonces a será un número par, si no es así, será un impar. 
+a % 2 == 0   # Si se cumple esta condición, entonces a será un número par, si no es así, será un impar. 
 ```
+Muy bien esto es todo respecto a este punto. (Revisar archivos adjunto: Taller impares). 
+
+---
+
+El siguiente punto del taller, es el numeral 4 que consiste en lo siguiente. 
+
+4. **Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.**
+
+
