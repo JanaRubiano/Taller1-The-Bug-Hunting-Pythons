@@ -54,7 +54,7 @@ if a > b and a > c # And es un condicional que hace verdadera una afirmación si
 if a > b and a > c
   print(str(a) + " Es el número mayor") # "str()" es un código que hace que en el "print()" se muestre que representa la varible. 
 ```
-Y hacemos lo mismo sucesivamente para los demás casos. (Revisar archivo adjunto: 
+Y hacemos lo mismo sucesivamente para los demás casos. (Revisar archivo adjunto: puntos pares taller 1.py)
 
 --- 
 
@@ -69,7 +69,12 @@ Sabemos que los pares son aquellos números que son divisibles por 2, es decir, 
 ```pseudocodigo
 a % 2 == 0   # Si se cumple esta condición, entonces a será un número par, si no es así, será un impar. 
 ```
-Muy bien esto es todo respecto a este punto. (Revisar archivos adjunto: Taller impares). 
+Para este punto, adjuntaremos un diagrama que ilustre el proceso. 
+
+[![Taller-1-punto-3.png](https://i.postimg.cc/8P45t22T/Taller-1-punto-3.png)](https://postimg.cc/F7fNKBF6)
+
+
+Y bien, eso es todo por este lado. (Revisar archivos adjunto: Taller impares. ipynb). 
 
 ---
 
@@ -77,4 +82,16 @@ El siguiente punto del taller, es el numeral 4 que consiste en lo siguiente.
 
 4. **Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.**
 
+Este punto cuenta con cierta similitud al punto anterior, pues básicamente utilizaremos la misma operación aritmética “%”, solo que esta vez, será entre 2 números que ingrese el usuario, ya que, nos piden conocer el múltiplo de un número y para saber el múltiplo de un número, solo debemos dividir al número entre el múltiplo y el residuo de esta operación debe ser cero. 
 
+¿Y cómo desarrollaremos al código? Solo tendremos que establecer 2 variables, pedir al usuario que por medio del código “input” ingrese su número y operaremos esas variables. 
+
+El siguiente diagrama ilustrara el proceso. (Revisar archivo adjunto: puntos pares taller 1.py)
+
+[![Taller-1-punto-4.png](https://i.postimg.cc/jjZm1Xsw/Taller-1-punto-4.png)](https://postimg.cc/sBGTQ5Gs)
+
+---
+
+Ahora bien, continuaremos con el siguiente punto. 
+
+5. **Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.** 
