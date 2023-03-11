@@ -33,9 +33,10 @@ Ahora bien, continuaremos con el siguiente punto.
 
 ¿Bueno y ahora por donde se empieza? Para comenzar nombraremos las variables que permitirán el desarrollo del código y usando "input()", dejaremos al usuario ingresar el valor númerico que este desee. Y con "int" y "float" estableceremos el tipo de número, es decir, si un número entero (con "int") o un número real (con "float"). 
 
-```pseudocodigo
-Ejemplo. 
+```python
+# Ejemplo. 
 # a, b y c: Es una variable y representa un número real cualquiera. (Decisión del usuario). 
+
 a: float = (input("Ingrese número: "))
 b: float = (input("Ingrese número: "))
 c: float = (input("Ingrese número: "))
@@ -45,16 +46,19 @@ Lo siguiente es establecer las comparciones.
 
 Ya solo queda indicar que número es mayor que otro con los simbolos mencionados anteriormente (>, <). 
 
-```pseudocodigo
-Ejemplo. 
+```python
+# Ejemplo. 
+
 if a > b and a > c # And es un condicional que hace verdadera una afirmación si se cumplen 2 condiciones.
-                  En este caso estariamos condicionando a que "a" debe ser mayor que "b" y "c". para que se cumpla el if. 
-                  y si se cumple la condición, mediante el código "print()" nos enseñara lo que decidamos poner dentro de este. 
+                  # En este caso estariamos condicionando a que "a" debe ser mayor que "b" y "c". para que se cumpla el if. 
+                   # y si se cumple la condición, mediante el código "print()" nos enseñara lo que decidamos poner dentro de este. 
                   
 if a > b and a > c
   print(str(a) + " Es el número mayor") # "str()" es un código que hace que en el "print()" se muestre que representa la varible. 
 ```
-Y hacemos lo mismo sucesivamente para los demás casos. (Revisar archivo adjunto: puntos pares taller 1.py)
+Y hacemos lo mismo sucesivamente para los demás casos. **(Revisar archivo adjunto: puntos pares taller 1.py)**
+
+
 
 --- 
 
@@ -66,7 +70,7 @@ Para el desarrollo de este punto básicamente necesitaremos que el usuario pueda
 
 Sabemos que los pares son aquellos números que son divisibles por 2, es decir, al dividirlos por 2, no dejan residuo, por lo que el operador aritmético modulo “%”, nos permitirá el desarrollo del código.  ¿Cómo haremos esto? Muy sencillo, estableceremos la siguiente operación. 
 
-```pseudocodigo
+```python
 a % 2 == 0   # Si se cumple esta condición, entonces a será un número par, si no es así, será un impar. 
 ```
 Para este punto, adjuntaremos un diagrama que ilustre el proceso. 
@@ -74,7 +78,7 @@ Para este punto, adjuntaremos un diagrama que ilustre el proceso.
 [![Taller-1-punto-3.png](https://i.postimg.cc/8P45t22T/Taller-1-punto-3.png)](https://postimg.cc/F7fNKBF6)
 
 
-Y bien, eso es todo por este lado. (Revisar archivos adjunto: Taller impares. ipynb). 
+Y bien, eso es todo por este lado. **(Revisar archivos adjunto: TAller impares. ipynb). **
 
 ---
 
@@ -86,7 +90,7 @@ Este punto cuenta con cierta similitud al punto anterior, pues básicamente util
 
 ¿Y cómo desarrollaremos al código? Solo tendremos que establecer 2 variables, pedir al usuario que por medio del código “input” ingrese su número y operaremos esas variables. 
 
-El siguiente diagrama ilustrara el proceso. (Revisar archivo adjunto: puntos pares taller 1.py)
+El siguiente diagrama ilustrara el proceso. **(Revisar archivo adjunto: puntos pares taller 1.py).**
 
 [![Taller-1-punto-4.png](https://i.postimg.cc/jjZm1Xsw/Taller-1-punto-4.png)](https://postimg.cc/sBGTQ5Gs)
 
@@ -95,3 +99,47 @@ El siguiente diagrama ilustrara el proceso. (Revisar archivo adjunto: puntos par
 Ahora bien, continuaremos con el siguiente punto. 
 
 5. **Realice un programa que lea tres números reales y determine si la suma de los dos primeros es mayor, menor o igual que el tercer número.** 
+
+¿Qué quiere decir esto? Que debemos desarrollar un código que presente la operación aritmética de la suma “+”.  Donde pediremos al usuario ingresar 3 números. Después de esto, sumaremos 2 de los números y lo comparemos con el tercer número. 
+
+```python
+# Ejemplo
+
+a = float(input("Ingrese el primer numero: ")) 
+b = float(input("Ingrese el segundo numero: ")) 
+c = float(input("Ingrese el tercer numero: ")) 
+if a + b < c :
+    print (a,"mas", b,"es menor que", c)
+```
+
+Y hacemos lo mismo sucesivamente para los demás casos. **(Revisar archivos adjunto: TAller impares. ipynb).**
+
+---
+
+Avanzando con el taller, el siguiente es el punto 6 el cual consiste en lo siguiente. 
+
+6. **Escriba un programa que solicite al usuario una letra y determine si es una vocal o una consonante.**
+
+Esta parte del taller varia un poco, pues ya no estamos utilizando números, sino para este caso utilizaremos letras y desarrollaremos un código que reconozca las vocales y las consonantes. 
+
+¿Pero cómo lo haremos? Para esto, usaremos “str” y lo demás lo continuaremos como ya lo conocemos. 
+
+```python
+# Ejemplo
+
+letra = str(input("Ingrese una letra (minuscula o mayuscula): "))  # Este código permitirá ingresar al usuario una letra. 
+if letra == "a" or letra == "A": # Esto funciona tal como ya lo hemos visto, es decir, si el usario ingresa la letra a, el programa imprimira "letra es vocal"
+    print("letra es vocal")
+```
+Y continuamos desarrollando el código de esta manera hasta completar todas las vocales. Y finalizamos con "else". 
+
+```python
+else:
+    print("letra es consonante") # "Else hará que las demás letras que no sean vocales, impriman lo siguiente: "letra es consonante"
+```
+
+---
+
+El siguiente punto del taller, es el numeral 7. 
+
+7. **Escriba un programa que pida 5 números reales y calcule las siguientes operaciones: El promedio, La mediana, El promedio multiplicativo, Ordenar los números de forma ascendente, Ordenar los números de forma descendente, La potencia del mayor número elevado al menor número y La raíz cúbica del menor número.**
