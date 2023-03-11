@@ -71,7 +71,7 @@ Para el desarrollo de este punto básicamente necesitaremos que el usuario pueda
 Sabemos que los pares son aquellos números que son divisibles por 2, es decir, al dividirlos por 2, no dejan residuo, por lo que el operador aritmético modulo “%”, nos permitirá el desarrollo del código.  ¿Cómo haremos esto? Muy sencillo, estableceremos la siguiente operación. 
 
 ```python
-a % 2 == 0   # Si se cumple esta condición, entonces a será un número par, si no es así, será un impar. 
+a % 2 == 0   # Si se cumple esta condición, entonces "a" será un número par, si no es así, será un impar. 
 ```
 Para este punto, adjuntaremos un diagrama que ilustre el proceso. 
 
@@ -162,3 +162,105 @@ f = a + b + c + d + e
 g = f/5    # Recordemos que el promedio es la suma de todos los datos divido en el total de datos. 
 print ("Media:",g)
 ```
+Avanzaremos a los siguientes subpuntos, pues estos tienen en común un factor importante: el orden de los números. Para este tendremos que organizar los valores mediante los símbolos (> y <), esto nos permitirá ir desarrollándolos.
+
+```Python
+# Ejemplo. 
+if a < b and a < c and a < d and a < e: 
+  primertermino = a
+elif b < a and b < c and b < d and b < e :
+  primertermino = b
+elif c < b and c < a and c < d and c < e :
+    primertermino = c
+elif d < b and d < c and d < a and d < e :
+    primertermino = d
+else :
+    primertermino = e
+```
+Esto organizará los números, no obstante, el proceso es bastante largo pues necesitaremos definir cual número es el número mayor, que número le sigue, etc… (Nada más en el ejemplo apenas estamos definiendo el primer término, faltarían los demás con un proceso igual) 
+
+Una vez ya tengamos todos los términos definidos, podremos imprimir los demás subpuntos. 
+* Como calcular la mediana. 
+```Python
+print ("Mediana:",tercertermino) # Sabemos que la mediana consiste en organizar los términos y tomar el del medio. 
+```
+*  Promedio multiplicativo. 
+
+```Python
+h = (a*b*c*d*e)**0.2  # Consiste en multiplicar entre si todos los números y sacar la raíz. 
+print ("Promedio Multiplicativo:",h)
+```
+* Ordenar los números de forma ascendente y ordenar los números de forma descendente
+```Python
+print (primertermino,"-",segundotermino,"-",tercertermino,"-",cuartotermino,"-",ultimotermino)
+```
+* La potencia del mayor número elevado al menor número y la raíz cúbica del menor número al primero. 
+```Python
+print (ultimotermino**primertermino)
+print (primertermino**(1/3))
+```
+Como se puede evidenciar la importancia del código de este punto radica en que sepamos definir mediante los símbolos (< y >) cual número es mayor, que le sigue, etc… **(Revisar archivos adjunto: TAller impares. ipynb).** 
+
+--- 
+
+Ahora bien, continuaremos con el siguiente punto. 
+
+8. **Escriba un programa al que se le ingrese la frecuencia de una onda en hz y como salida arroje en que parte del espectro electromagnético se encuentra.**
+
+Para resolver el siguiente problema mediante un código necesitamos conocer en que espectro electromagnético se encuentran ciertos intervalos de ondas de frecuencia en Hz. Para ello, simplemente necesitaremos usar los símbolos (< y >) y definir los intervalos. 
+
+```Python
+if 1 <= f < 10**8:
+  print("Ondas de radio")
+elif 10**8 <= f <10**12  # "Elif" Permite que si no se cumple la condición previamente dada, pase a comprobar una nueva condición. 
+  print("Microondas")
+```
+
+Y continuaremos haciendo lo mismo con los demás intervalos y su ubicación en el espectro electromagnético. **(Revisar archivo adjunto: puntos pares taller 1.py)**
+
+---
+
+El siguiente punto del taller, es el numeral 9. 
+
+9. **Escriba un programa que reciba el nombre en minúsculas de un país de America y retorne la ciudad capital, si el país no pertenece al continente debe arrojar país no identificado.**
+
+Para desarrollar el siguiente punto usaremos “lang”, mediante este podremos definir frases o palabras y demás que permitan que Python nos imprima un cometario cuando utilicemos dicha frase. 
+
+```Python
+lang = input("Escriba el nombre de un país de America (en minusculas) ")
+
+if lang == "canadá" or lang == "canada":
+  print("La capital de Canadá es Otawwa")
+elif lang ==  "estados unidos" or lang == "usa": # 
+  print("La capital de USA es Washington DC")
+```
+Y haremos lo mismo con los demás países de America. Para cerrar dicho código utilizaremos "else", este nos ayudara a que cuando alguien inserte un termino que no hayamos establecido con el "lang", arroje el siguiente cometario: 
+
+```Python
+else:
+  print("País no identificado")
+```
+**(Revisar archivos adjunto: TAller impares. ipynb).** 
+
+--- 
+
+Finalmente, explicaremos el último punto del taller. 
+
+10. **Escriba un programa que dada una distancia calcule:**
+* El tiempo que le tomaría a la luz recorrer la distancia.
+* El tiempo que le tomaría al sonido (en el aire) recorrer la distancia.
+* El tiempo que le tomaría al vehículo comercial más veloz recorrer la distancia.
+* El tiempo que le tomaría a Bolt recorrer la distancia.
+
+Este como todos los puntos anteriores, pediremos al usuario ingresar un valor numérico, en este caso que el valor numérico corresponda a una distancia.  Y usaremos la fórmula para determinar el tiempo que tardaría en recorrer x objeto la distancia dada por el usuario a x velocidad (dada por los subpuntos). 
+
+```Python
+distance: float= float(input("Ingrese una distancia en metros: "))
+print("La luz tardaría " + str(distance/3e8) + " segundos")  
+# En esta parte el código “str(distance/3e8)” es la fórmula para calcular el tiempo: Tiempo= Distancia/Velocidad y el “3e8” equivale a la velocidad de la luz en km/s 
+```
+**(Revisar archivo adjunto: puntos pares taller 1.py)**
+
+---
+
+Y bien esto es todo por el momento. Recuerda dejar tu estrella a los mejores pythoneros cazadores de bugs. 
