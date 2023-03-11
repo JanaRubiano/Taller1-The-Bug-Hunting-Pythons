@@ -1,4 +1,4 @@
-# Taller 1. 
+# Taller 1
 ### __Desarrollado por: The Bug Hunting Pythons.__
 * Integrantes: Jana Rubiano Hurtado, Samuel Villamizar y Ana Maria De Felipe Briñez. 
 ---
@@ -78,7 +78,7 @@ Para este punto, adjuntaremos un diagrama que ilustre el proceso.
 [![Taller-1-punto-3.png](https://i.postimg.cc/8P45t22T/Taller-1-punto-3.png)](https://postimg.cc/F7fNKBF6)
 
 
-Y bien, eso es todo por este lado. **(Revisar archivos adjunto: TAller impares. ipynb). **
+Y bien, eso es todo por este lado. **(Revisar archivos adjunto: TAller impares. ipynb)**
 
 ---
 
@@ -153,7 +153,7 @@ El siguiente punto del taller, es el numeral 7.
 * La potencia del mayor número elevado al menor número. 
 * La raíz cúbica del menor número.
 
-El siguiente punto es bastante extenso ya que tendremos que hacer varios códigos para llevarlo a cabo con éxito.  
+El siguiente punto es bastante extenso ya que tendremos que hacer varias comparaciones para llevar a cabo el código con éxito.  
 
 Comenzaremos con el primer subpunto, calcular el promedio de los 5 números que ingrese el usuario. Para ello utilizaremos 2 operaciones aritméticas: suma y división y estableceremos el código de la siguiente manera. 
 
@@ -210,7 +210,7 @@ Ahora bien, continuaremos con el siguiente punto.
 Para resolver el siguiente problema mediante un código necesitamos conocer en que espectro electromagnético se encuentran ciertos intervalos de ondas de frecuencia en Hz. Para ello, simplemente necesitaremos usar los símbolos (< y >) y definir los intervalos. 
 
 ```Python
-if 1 <= f < 10**8:
+if 1 <= f < 10**8:   # f, será la frecuencia en Hz que ingresará el usuario. 
   print("Ondas de radio")
 elif 10**8 <= f <10**12  # "Elif" Permite que si no se cumple la condición previamente dada, pase a comprobar una nueva condición. 
   print("Microondas")
