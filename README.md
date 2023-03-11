@@ -138,8 +138,27 @@ else:
     print("letra es consonante") # "Else hará que las demás letras que no sean vocales, impriman lo siguiente: "letra es consonante"
 ```
 
+**(Revisar archivo adjunto: puntos pares taller 1.py)**
+
 ---
 
 El siguiente punto del taller, es el numeral 7. 
 
-7. **Escriba un programa que pida 5 números reales y calcule las siguientes operaciones: El promedio, La mediana, El promedio multiplicativo, Ordenar los números de forma ascendente, Ordenar los números de forma descendente, La potencia del mayor número elevado al menor número y La raíz cúbica del menor número.**
+7. **Escriba un programa que pida 5 números reales y calcule las siguientes operaciones:** 
+* El promedio. 
+* La mediana.
+* El promedio multiplicativo. 
+* Ordenar los números de forma ascendente. 
+* Ordenar los números de forma descendente. 
+* La potencia del mayor número elevado al menor número. 
+* La raíz cúbica del menor número.
+
+El siguiente punto es bastante extenso ya que tendremos que hacer varios códigos para llevarlo a cabo con éxito.  
+
+Comenzaremos con el primer subpunto, calcular el promedio de los 5 números que ingrese el usuario. Para ello utilizaremos 2 operaciones aritméticas: suma y división y estableceremos el código de la siguiente manera. 
+
+```python
+f = a + b + c + d + e
+g = f/5    # Recordemos que el promedio es la suma de todos los datos divido en el total de datos. 
+print ("Media:",g)
+```
