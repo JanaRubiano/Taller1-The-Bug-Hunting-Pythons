@@ -21,7 +21,8 @@ Para este punto todos los miembros del equipo realizamos el Quiz.
 
 * Samuel Villamizar.
 
-(Insertar link)
+![Captura de pantalla 2023-03-02 222953](https://user-images.githubusercontent.com/124604126/224580950-9e159f7e-963c-4f96-96ec-525d1a84eb6b.png)
+
 
 ---
 
