@@ -47,7 +47,7 @@ f:float
 f = float(input("Ingrese una frecuencia en hz: "))
 if f < 0:
     print("Frecuencia invalida, frecuancia negativa")
-elif  1 <= f < 10**8:
+elif  10**4 <= f < 10**8:
     print("Ondas de Radio")
 elif 10**8 <= f < 10**12:
     print("Microondas")
@@ -62,7 +62,7 @@ elif 10**18 <= f < 10**20:
 elif 10**20 <= f < 10**24:
     print("Radición Gamma")
 else:
-    print("Frecuancia invalida, fuera de rango")
+    print("Frecuancia invalida, fuera de rango o muy baja")
 
 # 10. Escriba un programa que dada una distancia retorne los segundos que tardarían: 
 distance:float
