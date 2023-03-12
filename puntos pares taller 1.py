@@ -6,28 +6,14 @@ a = float(input("Ingrese un número: "))
 b = float(input("Ingrese un número: "))
 c = float(input("Ingrese un número: "))
 
-if a < b and a < c:
-    primero = a
-elif b < a and b < c:
-    primero = b
-else:
-    primero = c
-
 if a > b and a > c:
-    tercero = a
+    mayor = a
 elif b > a and b > c:
-    tercero = b
+    mayor = b
 else:
-    tercero = c
+    mayor = c
     
-if primero < a < tercero:
-    segundo = a
-elif primero < b < tercero:
-    segundo = b
-else:
-    segundo = c
-    
-print(primero, segundo, tercero)
+print(mayor)
 
 # 4. Realice un programa que lea dos números reales y determine si el primero es múltiplo del segundo.
 x:float
